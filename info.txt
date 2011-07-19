@@ -1,0 +1,20 @@
+title: CMS
+desc: This module adds some CMS-like features to Phorum, making it possible to use Phorum to build a complete website, pushing the forums to a sub-level.
+version: 1.0.0
+author: Phorum Dev Team
+url: http://www.phorum.org/
+require_version: 5.3
+
+hook: page_index|phorum_mod_cms_page_index
+hook: start_output|phorum_mod_cms_start_output
+hook: output_templates_index|phorum_mod_cms_output_templates_index
+hook: addon|phorum_mod_cms_addon
+
+# This is a custom hook that makes it easy to generate CMS URLs from
+# template code ({HOOK "cms_url" "pagename"}).
+hook: cms_url|phorum_mod_cms_url
+
+# This is a custom hook that allows us to include CMS content blocks 
+# in Phorum templates.
+hook: cms_block|phorum_mod_cms_block
+
