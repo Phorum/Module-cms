@@ -1,9 +1,8 @@
-Module  : CMS
-Version : 1.0.0
+Module  : @TITLE@
+Version : @VERSION@
 Author  : Maurice Makaay <maurice@phorum.org>
 
-This module adds some CMS-like features to Phorum, making it possible
-to use Phorum to build a complete website, pushing the forums to a sub-level.
+@DESCRIPTION@
 
 
 Installation instructions:
@@ -11,11 +10,11 @@ Installation instructions:
 
 - Unpack the archive;
 
-- Move the directory "custom_index_page" to the directory "mods"
+- Move the directory "@MODULE_ID@" to the directory "mods"
   within your Phorum installation;
 
 - Login as administrator in Phorum's administrative interface and
   go to the "Modules" section;
 
-- Enable the module "Custom Index Page".
+- Enable the module "@TITLE@".
 
